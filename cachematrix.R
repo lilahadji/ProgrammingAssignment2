@@ -51,6 +51,6 @@ cacheSolve <- function(x, ...) {
   data <- x$get() ##retrieve the matrix value
   ix <- solve(data, ...)## In this case, the function calculates the inverse
   x$setinverse(ix)## and caches it.
-  ix ## display the inverse matrix
+  ix ## return the inverse matrix
   
 }
